@@ -30,7 +30,7 @@ classifiers = [
 # Essential dependencies only (based on current NILMTK codebase)
 dependencies = [
     "ipython>=8.7.0",
-    "nilm-metadata @ git+https://github.com/Aayush75/nilm_metadata.git",
+    "nilm_metadata @ git+https://github.com/Aayush75/nilm_metadata.git",
     "nose",
     # Core scientific computing (Windows-compatible versions)
     "numpy>=1.24.0",
@@ -79,8 +79,6 @@ dev-dependencies = [
     "ruff>=0.0.280",
 ]
 
-[tool.uv.sources]
-nilm-metadata = { path = "../nilm_metadata/dist/nilm_metadata-0.2.6.dev0+g15426c3.d20250528-py3-none-any.whl" }
 
 # Code quality tools (Windows compatible)
 [tool.black]
